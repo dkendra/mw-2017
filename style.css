@@ -1,0 +1,147 @@
+body {
+    font-family: "Roboto", Futura, sans-serif;
+}
+
+*, *::before. *::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 1190px;
+  margin: 0 auto;
+}
+.hero {
+  background-image: url(http://jeremyabrahams.github.io/mw-project-1/img/hero.jpg);
+  background-repeat: no-repeat;
+  height: 640px;
+}
+.header-logo {
+  margin: 18px 0px 0px 34px;
+}
+.main-nav {
+  margin: 35px 7px 0px 0px;
+  float: right;
+}
+.main-nav_link {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-right: 28px;
+  text-transform: uppercase;
+}
+.hero-title {
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-size: 92px;
+  line-height: 107px;
+  font-weight: 100;
+  text-align: center;
+}
+.hero-text {
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 100;
+  text-align: center;
+}
+.section-intro {
+  margin: 0 auto;
+  margin-top: 150px;
+  width: 844px;
+}
+.intro-text {
+  color: #C3BFBF;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 300;
+}
+.img-divider {
+  margin: 0 auto;
+  margin-top: 77px;
+  margin-bottom: 127px;
+  display: block;
+}
+.course-goals_title {
+  color: #777777;
+  font-size: 28px;
+  line: 33px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0px;
+  margin: 0 auto;
+}
+.course-goals_list {
+  list-style-type: none;
+  padding: 69px 55px 155px 55px;
+  margin: 0 auto;
+}
+.course-goals_list li {
+  float: left;
+  width: 26%;
+  padding: 0px 26px 100px 26px;
+}
+.course-goals_list li:nth-child(3n+1) {
+  clear: left;
+  margin-left: 0;
+}
+
+.course-goal_title {
+  color: #777777;
+  font-size: 14px;
+  line-height: 16px;
+  font-face: 500;
+  margin: 0;
+}
+.course-goal_text {
+  color: #777777;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  margin: 0;
+}
+.section-meet {
+  background-color: #fafafa;
+  margin: 0 auto;
+  padding: 91px 84px 135px 84px;
+  display: inline-block;
+}
+.meet_title {
+  margin: 0 auto;
+  color: #444444;
+  font-size: 28px;
+  line: 53px;
+  font-weight: 500;
+  text-align: center;
+}
+.meet_list {
+  list-style-type: none;
+  margin-top: 65px;
+  padding-left: 0px;
+  text-align: center;
+}
+.meet_list-item {
+  padding: 0px;
+}
+
+.meet_list li {
+  float: left;
+  width: 25%;
+  margin-bottom: 70px;
+}
+
+.meet_list li img {
+  border-radius: 100%;
+}
+.student-name {
+  color: #444444;
+  font-size: 22px;
+  font-face: 500;
+  line-height: 25px;
+  text-align: center;
+}
