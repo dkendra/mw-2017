@@ -17,7 +17,7 @@ img {
 }
 
 .hero {
-  background-image: url(http://jeremyabrahams.github.io/mw-project-1/img/hero.jpg);
+  background-image: url(img/hero.jpg);
   background-repeat: no-repeat;
   height: 640px;
 }
