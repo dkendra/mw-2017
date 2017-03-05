@@ -47,6 +47,7 @@ img {
   line-height: 107px;
   font-weight: 100;
   text-align: center;
+  margin-top: 100px;
 }
 
 .hero-text {
@@ -89,14 +90,17 @@ img {
 
 .course-goals_list {
   list-style-type: none;
-  padding: 69px 55px 155px 55px;
+  /*padding: 69px 55px 155px 55px;*/
   margin: 0 auto;
+  width: 1100px;
 }
 
 .course-goals_list li {
   float: left;
-  width: 26%;
-  padding: 0px 26px 100px 26px;
+  width: calc(33% - 1.5rem * .667);
+  /*padding: 0px 26px 100px 26px;*/
+  margin: 0 0 0 1.5rem;
+  border: 1px solid red;
 }
 
 .course-goals_list li:nth-child(3n+1) {
@@ -163,4 +167,80 @@ img {
   font-face: 500;
   line-height: 25px;
   text-align: center;
+}
+
+.section-instructor {
+  background-image: url(img/instructor.jpg);
+  background-repeat: no-repeat;
+  height: 701px;
+}
+
+.section-quote {
+  height: 626px;
+}
+
+.quote {
+  color: #E66244;
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 903px;
+  padding: 170px 0px 74px 0px;
+  margin: 0 auto;
+}
+
+.quote-author {
+  color: #AAAAAA;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.quote-authorinfo {
+  color: #AAAAAA;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.quote-authorinfo a {
+  color: #AAAAAA;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: underline;
+  margin: 0 auto;
+}
+
+.section-footer {
+  background-image: url(img/footer.jpg);
+  background-repeat: no-repeat;
+  height: 672px;
+}
+
+.footer-classinfo {
+  color: #FFF;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 100;
+  padding: 141px 0px 0px 92px;
+}
+
+.footer-address {
+  color: #FFF;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.footer-address::before {
+
+  padding: 32px;
 }
