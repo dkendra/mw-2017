@@ -1,2 +1,320 @@
-h1 {
-  color: #009900; }
+body {
+  font-family: "Roboto", Futura, sans-serif;
+  margin: 0 auto; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.wrapper {
+  width: 100%;
+  max-width: 1190px;
+  margin: 0 auto; }
+
+.hero {
+  background-image: url(img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  min-height: 640px; }
+
+.header-logo {
+  margin: 18px 0px 0px 34px; }
+
+.main-nav {
+  margin: 35px 7px 0px 0px;
+  float: right; }
+
+.main-nav_link {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-right: 28px;
+  text-transform: uppercase; }
+
+.hero-title {
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-size: 92px;
+  line-height: 107px;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 100px; }
+
+.hero-text {
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 100;
+  text-align: center; }
+
+.mw-icon {
+  background-image: url(img/mw-icon.png);
+  width: 43px;
+  height: 30px;
+  display: block;
+  margin: auto; }
+
+.section-intro {
+  margin: 0 auto;
+  margin-top: 150px; }
+
+.intro-text {
+  color: #C3BFBF;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 300;
+  width: 70%;
+  margin: auto; }
+
+.img-divider {
+  margin: 0 auto;
+  margin-top: 77px;
+  margin-bottom: 127px;
+  display: block; }
+
+.course-goals_title {
+  color: #777777;
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0px;
+  margin: 0 auto; }
+
+.course-goals_list {
+  list-style-type: none;
+  padding: 69px 55px 155px 55px;
+  margin: 0 auto;
+  width: 90%; }
+
+.course-goals_list li {
+  float: left;
+  width: calc(33% - 5.5rem * .667);
+  padding-bottom: 100px;
+  margin: 0 0 0 5.5rem; }
+
+.course-goals_list li:nth-child(3n+1) {
+  clear: left;
+  margin-left: 0; }
+
+.course-goal_title {
+  color: #777777;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  margin: 0; }
+
+.course-goal_text {
+  color: #777777;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  margin: 0; }
+
+.section-meet {
+  background-color: #fafafa;
+  width: 100%;
+  margin: 0 auto;
+  padding: 91px 0px 135px 0px;
+  display: inline-block; }
+
+.meet_title {
+  margin: 0 auto;
+  color: #444444;
+  font-size: 28px;
+  line-height: 53px;
+  font-weight: 500;
+  text-align: center; }
+
+.meet_list {
+  list-style-type: none;
+  margin-top: 65px;
+  text-align: center; }
+
+.meet_list li {
+  float: left;
+  width: calc(25% - 2.5rem);
+  margin: 0 0 0 2.5rem;
+  padding-bottom: 70px; }
+
+.meet_list li:nth-child(4n+1) {
+  clear: left;
+  margin-left: 0; }
+
+.meet_list li img {
+  border-radius: 100%;
+  padding: 10px;
+  max-width: 100%;
+  height: auto; }
+
+.student-name {
+  color: #444444;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: center; }
+
+.meet_socials {
+  display: inline-block;
+  padding: 0px; }
+
+.meet_socials li {
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  padding: 0;
+  margin: 0 0 0 1rem;
+  background-image: url(img/slice.png);
+  background-repeat: no-repeat;
+  text-indent: 100%;
+  white-space: no-wrap;
+  overflow: hidden; }
+
+.twitter {
+  background-position: 1px 2px; }
+
+.facebook {
+  background-position: -33px 2px; }
+
+.dribble {
+  background-position: -69px 2px; }
+
+.linkedin {
+  background-position: -104px 2px; }
+
+.section-instructor {
+  background-image: url(img/instructor.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 701px; }
+
+.instructor_wrap {
+  width: 35%;
+  margin: 208px 0px 183px 84px;
+  display: inline-block; }
+
+.instructor_meet {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 53px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0; }
+
+.instructor_name {
+  color: #FFFFFF;
+  font-size: 36px;
+  line-height: 38px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0; }
+
+.instructor_title {
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 21px; }
+
+.instructor_bio {
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+  margin: 0; }
+
+.section-quote {
+  height: 626px; }
+
+.quote {
+  color: #E66244;
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 75%;
+  padding: 170px 0px 74px 0px;
+  margin: 0 auto; }
+
+.quote-author {
+  color: #AAAAAA;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto; }
+
+.quote-authorinfo {
+  color: #AAAAAA;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto; }
+
+.quote-authorinfo a {
+  color: #AAAAAA;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: underline;
+  margin: 0 auto; }
+
+.section-signup {
+  background-image: url(img/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 672px; }
+
+.signup-classinfo {
+  color: #FFF;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 100;
+  padding: 110px 0px 0px 92px;
+  margin: 0;
+  float: left; }
+
+.button {
+  float: right;
+  background-color: #E66244;
+  width: 327px;
+  height: 95px;
+  border: 3px solid #FFFFFF;
+  margin: 210px 92px 0px 0px; }
+
+.button-signup {
+  color: #FFF;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center; }
+
+.section-footer {
+  margin-top: -126px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.25);
+  height: 126px; }
+
+.section-footer img {
+  float: left;
+  width: 10%;
+  margin: 30px 30px 0px 32px; }
+
+.footer-address {
+  color: #FFF;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  padding-top: 55px;
+  margin: 0px; }

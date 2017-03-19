@@ -2,6 +2,11 @@ $red: #ff3300;
 $blue: #0000ff;
 $green: #009900;
 
-h1 {
-  color: $green;
-}
+@import "partials/general";
+@import "partials/header";
+@import "partials/intro";
+@import "partials/coursegoals";
+@import "partials/meetcolearners";
+@import "partials/instructor";
+@import "partials/testimonial";
+@import "partials/signupfooter";

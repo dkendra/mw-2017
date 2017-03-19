@@ -1,0 +1,82 @@
+.section-meet {
+  background-color: #fafafa;
+  width: 100%;
+  margin: 0 auto;
+  padding: 91px 0px 135px 0px;
+  display: inline-block
+}
+
+.meet_title {
+  margin: 0 auto;
+  color: #444444;
+  font-size: 28px;
+  line-height: 53px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.meet_list {
+  list-style-type: none;
+  margin-top: 65px;
+  text-align: center;
+}
+
+.meet_list li {
+  float: left;
+  width: calc(25% - 2.5rem);
+  margin: 0 0 0 2.5rem;
+  padding-bottom: 70px;
+}
+.meet_list li:nth-child(4n+1) {
+  clear: left;
+  margin-left: 0;
+}
+
+.meet_list li img {
+  border-radius: 100%;
+  padding: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.student-name {
+  color: #444444;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: center;
+}
+
+.meet_socials {
+  display: inline-block;
+  padding: 0px;
+}
+
+.meet_socials li{
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  padding: 0;
+  margin: 0 0 0 1rem;
+  background-image: url(img/slice.png);
+  background-repeat: no-repeat;
+  text-indent: 100%;
+  white-space: no-wrap;
+  overflow: hidden;
+}
+
+.twitter {
+  background-position: 1px 2px;
+}
+
+.facebook {
+  background-position: -33px 2px;
+}
+
+.dribble {
+  background-position: -69px 2px;
+}
+
+.linkedin {
+  background-position: -104px 2px;
+}
