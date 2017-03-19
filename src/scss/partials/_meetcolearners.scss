@@ -1,3 +1,81 @@
+@media (max-width: 599px) {
+  .meet_list li {
+    float: left;
+    width: calc(50% - 2.5rem);
+    margin: 0 0 0 2.5rem;
+    padding-bottom: 70px;
+  }
+
+  .meet_list li:nth-child(2n+1) {
+    clear: left;
+    margin-left: 0;
+  }
+
+  .meet_list li img {
+    border-radius: 100%;
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .student-name {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .meet_list li {
+    float: left;
+    width: calc(33% - 2.5rem);
+    margin: 0 0 0 2.5rem;
+    padding-bottom: 70px;
+  }
+
+  .meet_list li:nth-child(3n+1) {
+    clear: left;
+    margin-left: 0;
+  }
+
+  .meet_list li img {
+    border-radius: 100%;
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .student-name {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 900px) {
+  .meet_list li {
+    float: left;
+    width: calc(25% - 2.5rem);
+    margin: 0 0 0 2.5rem;
+    padding-bottom: 70px;
+  }
+
+  .meet_list li:nth-child(4n+1) {
+    clear: left;
+    margin-left: 0;
+  }
+
+  .meet_list li img {
+    border-radius: 100%;
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .student-name {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
+
 .section-meet {
   background-color: #fafafa;
   width: 100%;
@@ -21,39 +99,21 @@
   text-align: center;
 }
 
-.meet_list li {
-  float: left;
-  width: calc(25% - 2.5rem);
-  margin: 0 0 0 2.5rem;
-  padding-bottom: 70px;
-}
-.meet_list li:nth-child(4n+1) {
-  clear: left;
-  margin-left: 0;
-}
-
-.meet_list li img {
-  border-radius: 100%;
-  padding: 10px;
-  max-width: 100%;
-  height: auto;
-}
-
 .student-name {
   color: #444444;
-  font-size: 22px;
   font-weight: 500;
-  line-height: 25px;
   text-align: center;
 }
 
 .meet_socials {
   display: inline-block;
   padding: 0px;
+  border: 1px solid blue;
 }
 
 .meet_socials li{
   display: inline-block;
+  float:none;
   width: 22px;
   height: 20px;
   padding: 0;
@@ -63,6 +123,7 @@
   text-indent: 100%;
   white-space: no-wrap;
   overflow: hidden;
+  border: 1px solid red;
 }
 
 .twitter {

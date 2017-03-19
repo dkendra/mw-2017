@@ -1,3 +1,15 @@
+@media (min-width: 599px) {
+
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+
+}
+
+@media (min-width: 900px) {
+
+}
+
 .section-instructor {
   background-image: url(img/instructor.jpg);
   background-repeat: no-repeat;
@@ -7,8 +19,11 @@
 
 .instructor_wrap {
   width: 35%;
-  margin: 208px 0px 183px 84px;
+  min-width: 375px;
+  // height: inherit;
+  // margin: 100px 0px 0px 75px;
   display: inline-block;
+  border: 1px solid red;
 }
 
 .instructor_meet {

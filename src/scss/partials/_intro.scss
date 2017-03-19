@@ -1,3 +1,24 @@
+@media (max-width: 599px) {
+  .intro-text {
+    font-size: 22px;
+  }
+  .img-divider {
+    width: 80%;
+  }
+}
+
+@media (min-width: 600px) {
+  .intro-text {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 900px) {
+  .intro-text {
+    font-size: 32px;
+  }
+}
+
 .section-intro {
   margin: 0 auto;
   margin-top: 150px;
@@ -5,7 +26,6 @@
 
 .intro-text {
   color: #C3BFBF;
-  font-size: 32px;
   text-align: center;
   font-weight: 300;
   width: 70%;
@@ -17,4 +37,5 @@
   margin-top: 77px;
   margin-bottom: 127px;
   display: block;
+  max-width: 556px;
 }

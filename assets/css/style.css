@@ -60,13 +60,26 @@ img {
   display: block;
   margin: auto; }
 
+@media (max-width: 599px) {
+  .intro-text {
+    font-size: 22px; }
+  .img-divider {
+    width: 80%; } }
+
+@media (min-width: 600px) {
+  .intro-text {
+    font-size: 28px; } }
+
+@media (min-width: 900px) {
+  .intro-text {
+    font-size: 32px; } }
+
 .section-intro {
   margin: 0 auto;
   margin-top: 150px; }
 
 .intro-text {
   color: #C3BFBF;
-  font-size: 32px;
   text-align: center;
   font-weight: 300;
   width: 70%;
@@ -76,7 +89,35 @@ img {
   margin: 0 auto;
   margin-top: 77px;
   margin-bottom: 127px;
-  display: block; }
+  display: block;
+  max-width: 556px; }
+
+@media (max-width: 599px) {
+  .course-goals_list li {
+    float: left;
+    width: 90%;
+    padding-bottom: 50px;
+    margin: 0 0 0 0rem; } }
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .course-goals_list li {
+    float: left;
+    width: calc(50% - 3rem * .5);
+    padding-bottom: 75px;
+    margin: 0 0 0 3rem; }
+  .course-goals_list li:nth-child(2n+1) {
+    clear: left;
+    margin-left: 0; } }
+
+@media (min-width: 900px) {
+  .course-goals_list li {
+    float: left;
+    width: calc(33% - 5.5rem * .667);
+    padding-bottom: 100px;
+    margin: 0 0 0 5.5rem; }
+  .course-goals_list li:nth-child(3n+1) {
+    clear: left;
+    margin-left: 0; } }
 
 .course-goals_title {
   color: #777777;
@@ -91,17 +132,7 @@ img {
   list-style-type: none;
   padding: 69px 55px 155px 55px;
   margin: 0 auto;
-  width: 90%; }
-
-.course-goals_list li {
-  float: left;
-  width: calc(33% - 5.5rem * .667);
-  padding-bottom: 100px;
-  margin: 0 0 0 5.5rem; }
-
-.course-goals_list li:nth-child(3n+1) {
-  clear: left;
-  margin-left: 0; }
+  width: 95%; }
 
 .course-goal_title {
   color: #777777;
@@ -116,6 +147,60 @@ img {
   line-height: 24px;
   font-weight: 300;
   margin: 0; }
+
+@media (max-width: 599px) {
+  .meet_list li {
+    float: left;
+    width: calc(50% - 2.5rem);
+    margin: 0 0 0 2.5rem;
+    padding-bottom: 70px; }
+  .meet_list li:nth-child(2n+1) {
+    clear: left;
+    margin-left: 0; }
+  .meet_list li img {
+    border-radius: 100%;
+    padding: 5px;
+    max-width: 100%;
+    height: auto; }
+  .student-name {
+    font-size: 18px;
+    line-height: 20px; } }
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .meet_list li {
+    float: left;
+    width: calc(33% - 2.5rem);
+    margin: 0 0 0 2.5rem;
+    padding-bottom: 70px; }
+  .meet_list li:nth-child(3n+1) {
+    clear: left;
+    margin-left: 0; }
+  .meet_list li img {
+    border-radius: 100%;
+    padding: 5px;
+    max-width: 100%;
+    height: auto; }
+  .student-name {
+    font-size: 20px;
+    line-height: 22px; } }
+
+@media (min-width: 900px) {
+  .meet_list li {
+    float: left;
+    width: calc(25% - 2.5rem);
+    margin: 0 0 0 2.5rem;
+    padding-bottom: 70px; }
+  .meet_list li:nth-child(4n+1) {
+    clear: left;
+    margin-left: 0; }
+  .meet_list li img {
+    border-radius: 100%;
+    padding: 10px;
+    max-width: 100%;
+    height: auto; }
+  .student-name {
+    font-size: 22px;
+    line-height: 25px; } }
 
 .section-meet {
   background-color: #fafafa;
@@ -137,35 +222,19 @@ img {
   margin-top: 65px;
   text-align: center; }
 
-.meet_list li {
-  float: left;
-  width: calc(25% - 2.5rem);
-  margin: 0 0 0 2.5rem;
-  padding-bottom: 70px; }
-
-.meet_list li:nth-child(4n+1) {
-  clear: left;
-  margin-left: 0; }
-
-.meet_list li img {
-  border-radius: 100%;
-  padding: 10px;
-  max-width: 100%;
-  height: auto; }
-
 .student-name {
   color: #444444;
-  font-size: 22px;
   font-weight: 500;
-  line-height: 25px;
   text-align: center; }
 
 .meet_socials {
   display: inline-block;
-  padding: 0px; }
+  padding: 0px;
+  border: 1px solid blue; }
 
 .meet_socials li {
   display: inline-block;
+  float: none;
   width: 22px;
   height: 20px;
   padding: 0;
@@ -174,7 +243,8 @@ img {
   background-repeat: no-repeat;
   text-indent: 100%;
   white-space: no-wrap;
-  overflow: hidden; }
+  overflow: hidden;
+  border: 1px solid red; }
 
 .twitter {
   background-position: 1px 2px; }
@@ -196,8 +266,9 @@ img {
 
 .instructor_wrap {
   width: 35%;
-  margin: 208px 0px 183px 84px;
-  display: inline-block; }
+  min-width: 375px;
+  display: inline-block;
+  border: 1px solid red; }
 
 .instructor_meet {
   color: #FFFFFF;
@@ -230,13 +301,26 @@ img {
   font-weight: 300;
   margin: 0; }
 
+@media (max-width: 599px) {
+  .quote {
+    font-size: 28px;
+    line-height: 44px; } }
+
+@media (min-width: 600px) {
+  .quote {
+    font-size: 38px;
+    line-height: 54px; } }
+
+@media (min-width: 900px) {
+  .quote {
+    font-size: 48px;
+    line-height: 64px; } }
+
 .section-quote {
   height: 626px; }
 
 .quote {
   color: #E66244;
-  font-size: 48px;
-  line-height: 64px;
   font-weight: 300;
   font-style: italic;
   text-align: center;

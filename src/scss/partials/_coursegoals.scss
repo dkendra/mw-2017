@@ -1,3 +1,38 @@
+@media (max-width: 599px) {
+  .course-goals_list li {
+    float: left;
+    width: 90%;
+    padding-bottom: 50px;
+    margin: 0 0 0 0rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .course-goals_list li {
+    float: left;
+    width: calc(50% - 3rem * .5);
+    padding-bottom: 75px;
+    margin: 0 0 0 3rem;
+  }
+  .course-goals_list li:nth-child(2n+1) {
+    clear: left;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .course-goals_list li {
+    float: left;
+    width: calc(33% - 5.5rem * .667);
+    padding-bottom: 100px;
+    margin: 0 0 0 5.5rem;
+  }
+  .course-goals_list li:nth-child(3n+1) {
+    clear: left;
+    margin-left: 0;
+  }
+}
+
 .course-goals_title {
   color: #777777;
   font-size: 28px;
@@ -12,19 +47,7 @@
   list-style-type: none;
   padding: 69px 55px 155px 55px;
   margin: 0 auto;
-  width: 90%;
-}
-
-.course-goals_list li {
-  float: left;
-  width: calc(33% - 5.5rem * .667);
-  padding-bottom: 100px;
-  margin: 0 0 0 5.5rem;
-}
-
-.course-goals_list li:nth-child(3n+1) {
-  clear: left;
-  margin-left: 0;
+  width: 95%;
 }
 
 .course-goal_title {
