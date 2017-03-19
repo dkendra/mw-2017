@@ -149,15 +149,15 @@ img {
   margin: 0; }
 
 @media (max-width: 599px) {
-  .meet_list li {
+  .student {
     float: left;
     width: calc(50% - 2.5rem);
     margin: 0 0 0 2.5rem;
     padding-bottom: 70px; }
-  .meet_list li:nth-child(2n+1) {
+  .student:nth-child(2n+1) {
     clear: left;
     margin-left: 0; }
-  .meet_list li img {
+  .student img {
     border-radius: 100%;
     padding: 5px;
     max-width: 100%;
@@ -167,15 +167,15 @@ img {
     line-height: 20px; } }
 
 @media (min-width: 600px) and (max-width: 899px) {
-  .meet_list li {
+  .student {
     float: left;
     width: calc(33% - 2.5rem);
     margin: 0 0 0 2.5rem;
     padding-bottom: 70px; }
-  .meet_list li:nth-child(3n+1) {
+  .student:nth-child(3n+1) {
     clear: left;
     margin-left: 0; }
-  .meet_list li img {
+  .student img {
     border-radius: 100%;
     padding: 5px;
     max-width: 100%;
@@ -185,15 +185,15 @@ img {
     line-height: 22px; } }
 
 @media (min-width: 900px) {
-  .meet_list li {
+  .student {
     float: left;
     width: calc(25% - 2.5rem);
     margin: 0 0 0 2.5rem;
     padding-bottom: 70px; }
-  .meet_list li:nth-child(4n+1) {
+  .student:nth-child(4n+1) {
     clear: left;
     margin-left: 0; }
-  .meet_list li img {
+  .student img {
     border-radius: 100%;
     padding: 10px;
     max-width: 100%;
@@ -234,11 +234,10 @@ img {
 
 .meet_socials li {
   display: inline-block;
-  float: none;
   width: 22px;
   height: 20px;
   padding: 0;
-  margin: 0 0 0 1rem;
+  margin: 0px 2px 0px 2px;
   background-image: url(img/slice.png);
   background-repeat: no-repeat;
   text-indent: 100%;
@@ -259,16 +258,26 @@ img {
   background-position: -104px 2px; }
 
 .section-instructor {
-  background-image: url(img/instructor.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 701px; }
+  position: relative;
+  /* handle min width scenario */
+  background: no-repeat url(img/instructor.jpg) 50%/100%; }
+
+.instructor-image {
+  vertical-align: top;
+  width: 100%;
+  opacity: 0; }
 
 .instructor_wrap {
-  width: 35%;
+  /* layout rules */
+  position: absolute;
+  width: 40%;
   min-width: 375px;
-  display: inline-block;
-  border: 1px solid red; }
+  overflow: hidden;
+  border: 1px solid red;
+  /* layout settings */
+  padding-top: 15px;
+  top: 50%;
+  transform: translateY(-50%); }
 
 .instructor_meet {
   color: #FFFFFF;
