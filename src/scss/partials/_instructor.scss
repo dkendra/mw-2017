@@ -1,13 +1,149 @@
-@media (min-width: 599px) {
+@media (max-width: 479px) {
+  .instructor_wrap {
+    width: 100%;
+    background-color: #E66244;
+    /* layout settings */
+    margin-left: 0px;
+    padding: 20px;
+  }
 
+  .instructor_meet {
+    font-size: 16px;
+    line-height: 50px;
+  }
+
+  .instructor_name {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .instructor_title {
+    font-size: 22px;
+    line-height: 18px;
+  }
+
+  .instructor_bio {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .instructor-image {
+    vertical-align:top;
+    width: 100%;
+    opacity: 1;
+  }
 }
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 480px) and (max-width: 767px) {
+  .instructor_wrap {
+    width: 100%;
+    background-color: #E66244;
+    /* layout settings */
+    margin-left: 0px;
+    padding: 20px;
+  }
 
+  .instructor_meet {
+    font-size: 16px;
+    line-height: 50px;
+  }
+
+  .instructor_name {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .instructor_title {
+    font-size: 22px;
+    line-height: 18px;
+  }
+
+  .instructor_bio {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .instructor-image {
+    vertical-align:top;
+    width: 100%;
+    opacity: 1;
+  }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  .instructor_wrap {
+    position: absolute;
+    width: 40%;
+    min-width: 375px;
+    overflow: hidden;
+    /* layout settings */
+    padding-top: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 25px;
+  }
 
+  .instructor_meet {
+    font-size: 18px;
+    line-height: 53px;
+  }
+
+  .instructor_name {
+    font-size: 36px;
+    line-height: 38px;
+  }
+
+  .instructor_title {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .instructor_bio {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .instructor-image {
+    vertical-align:top;
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .instructor_wrap {
+    position: absolute;
+    width: 40%;
+    min-width: 375px;
+    overflow: hidden;
+    /* layout settings */
+    padding-top: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 50px;
+  }
+
+  .instructor_meet {
+    font-size: 18px;
+    line-height: 53px;
+  }
+
+  .instructor_name {
+    font-size: 36px;
+    line-height: 38px;
+  }
+
+  .instructor_title {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .instructor_bio {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .instructor-image {
+    vertical-align:top;
+    width: 100%;
+    opacity: 0;
+  }
 }
 
 .section-instructor {
@@ -19,26 +155,10 @@
 .instructor-image {
   vertical-align:top;
   width: 100%;
-  opacity: 0;
 }
-
-.instructor_wrap {
-  /* layout rules */
-   position: absolute;
-   width: 40%;
-   min-width: 375px;
-   overflow: hidden;
-   border: 1px solid red;
-   /* layout settings */
-   padding-top: 15px;
-   top: 50%;
-   transform: translateY(-50%);
- }
 
 .instructor_meet {
   color: #FFFFFF;
-  font-size: 18px;
-  line-height: 53px;
   font-weight: 300;
   text-transform: uppercase;
   margin: 0;
@@ -46,8 +166,6 @@
 
 .instructor_name {
   color: #FFFFFF;
-  font-size: 36px;
-  line-height: 38px;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
@@ -55,8 +173,6 @@
 
 .instructor_title {
   color: #FFFFFF;
-  font-size: 22px;
-  line-height: 25px;
   font-weight: 400;
   margin: 0;
   padding-bottom: 21px;
@@ -64,8 +180,6 @@
 
 .instructor_bio {
   color: #FFFFFF;
-  font-size: 20px;
-  line-height: 28px;
   font-weight: 300;
   margin: 0;
 }

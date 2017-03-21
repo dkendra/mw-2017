@@ -1,4 +1,4 @@
-@media (max-width: 599px) {
+@media (max-width: 479px) {
   .course-goals_list li {
     float: left;
     width: 90%;
@@ -7,12 +7,12 @@
     }
 }
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .course-goals_list li {
     float: left;
-    width: calc(50% - 3rem * .5);
+    width: calc(50% - 2rem * .5);
     padding-bottom: 75px;
-    margin: 0 0 0 3rem;
+    margin: 0 0 0 2rem;
   }
   .course-goals_list li:nth-child(2n+1) {
     clear: left;
@@ -20,7 +20,20 @@
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  .course-goals_list li {
+    float: left;
+    width: calc(33% - 1.5rem * .667);
+    padding-bottom: 100px;
+    margin: 0 0 0 1.5rem;
+  }
+  .course-goals_list li:nth-child(3n+1) {
+    clear: left;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1024px) {
   .course-goals_list li {
     float: left;
     width: calc(33% - 5.5rem * .667);

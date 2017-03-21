@@ -60,17 +60,17 @@ img {
   display: block;
   margin: auto; }
 
-@media (max-width: 599px) {
+@media (min-width: 320px) {
   .intro-text {
     font-size: 22px; }
   .img-divider {
     width: 80%; } }
 
-@media (min-width: 600px) {
+@media (min-width: 480px) {
   .intro-text {
     font-size: 28px; } }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .intro-text {
     font-size: 32px; } }
 
@@ -92,24 +92,34 @@ img {
   display: block;
   max-width: 556px; }
 
-@media (max-width: 599px) {
+@media (max-width: 479px) {
   .course-goals_list li {
     float: left;
     width: 90%;
     padding-bottom: 50px;
     margin: 0 0 0 0rem; } }
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .course-goals_list li {
     float: left;
-    width: calc(50% - 3rem * .5);
+    width: calc(50% - 2rem * .5);
     padding-bottom: 75px;
-    margin: 0 0 0 3rem; }
+    margin: 0 0 0 2rem; }
   .course-goals_list li:nth-child(2n+1) {
     clear: left;
     margin-left: 0; } }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  .course-goals_list li {
+    float: left;
+    width: calc(33% - 1.5rem * .667);
+    padding-bottom: 100px;
+    margin: 0 0 0 1.5rem; }
+  .course-goals_list li:nth-child(3n+1) {
+    clear: left;
+    margin-left: 0; } }
+
+@media (min-width: 1024px) {
   .course-goals_list li {
     float: left;
     width: calc(33% - 5.5rem * .667);
@@ -148,7 +158,7 @@ img {
   font-weight: 300;
   margin: 0; }
 
-@media (max-width: 599px) {
+@media (max-width: 479px) {
   .student {
     float: left;
     width: calc(50% - 2.5rem);
@@ -159,32 +169,50 @@ img {
     margin-left: 0; }
   .student img {
     border-radius: 100%;
-    padding: 5px;
+    padding: 0px;
     max-width: 100%;
     height: auto; }
   .student-name {
     font-size: 18px;
     line-height: 20px; } }
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .student {
     float: left;
-    width: calc(33% - 2.5rem);
+    width: calc(50% - 2.5rem);
     margin: 0 0 0 2.5rem;
+    padding-bottom: 70px; }
+  .student:nth-child(2n+1) {
+    clear: left;
+    margin-left: 0; }
+  .student img {
+    border-radius: 100%;
+    padding: 0px;
+    max-width: 100%;
+    height: auto; }
+  .student-name {
+    font-size: 18px;
+    line-height: 20px; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .student {
+    float: left;
+    width: calc(33% - 1.5rem);
+    margin: 0 0 0 1.5rem;
     padding-bottom: 70px; }
   .student:nth-child(3n+1) {
     clear: left;
     margin-left: 0; }
   .student img {
     border-radius: 100%;
-    padding: 5px;
+    padding: 8px;
     max-width: 100%;
     height: auto; }
   .student-name {
     font-size: 20px;
     line-height: 22px; } }
 
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   .student {
     float: left;
     width: calc(25% - 2.5rem);
@@ -257,6 +285,110 @@ img {
 .linkedin {
   background-position: -104px 2px; }
 
+@media (max-width: 479px) {
+  .instructor_wrap {
+    width: 100%;
+    background-color: #E66244;
+    /* layout settings */
+    margin-left: 0px;
+    padding: 20px; }
+  .instructor_meet {
+    font-size: 16px;
+    line-height: 50px; }
+  .instructor_name {
+    font-size: 30px;
+    line-height: 32px; }
+  .instructor_title {
+    font-size: 22px;
+    line-height: 18px; }
+  .instructor_bio {
+    font-size: 14px;
+    line-height: 20px; }
+  .instructor-image {
+    vertical-align: top;
+    width: 100%;
+    opacity: 1; } }
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .instructor_wrap {
+    width: 100%;
+    background-color: #E66244;
+    /* layout settings */
+    margin-left: 0px;
+    padding: 20px; }
+  .instructor_meet {
+    font-size: 16px;
+    line-height: 50px; }
+  .instructor_name {
+    font-size: 30px;
+    line-height: 32px; }
+  .instructor_title {
+    font-size: 22px;
+    line-height: 18px; }
+  .instructor_bio {
+    font-size: 14px;
+    line-height: 20px; }
+  .instructor-image {
+    vertical-align: top;
+    width: 100%;
+    opacity: 1; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .instructor_wrap {
+    position: absolute;
+    width: 40%;
+    min-width: 375px;
+    overflow: hidden;
+    /* layout settings */
+    padding-top: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 25px; }
+  .instructor_meet {
+    font-size: 18px;
+    line-height: 53px; }
+  .instructor_name {
+    font-size: 36px;
+    line-height: 38px; }
+  .instructor_title {
+    font-size: 22px;
+    line-height: 25px; }
+  .instructor_bio {
+    font-size: 16px;
+    line-height: 22px; }
+  .instructor-image {
+    vertical-align: top;
+    width: 100%;
+    opacity: 0; } }
+
+@media (min-width: 1024px) {
+  .instructor_wrap {
+    position: absolute;
+    width: 40%;
+    min-width: 375px;
+    overflow: hidden;
+    /* layout settings */
+    padding-top: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 50px; }
+  .instructor_meet {
+    font-size: 18px;
+    line-height: 53px; }
+  .instructor_name {
+    font-size: 36px;
+    line-height: 38px; }
+  .instructor_title {
+    font-size: 22px;
+    line-height: 25px; }
+  .instructor_bio {
+    font-size: 20px;
+    line-height: 28px; }
+  .instructor-image {
+    vertical-align: top;
+    width: 100%;
+    opacity: 0; } }
+
 .section-instructor {
   position: relative;
   /* handle min width scenario */
@@ -264,66 +396,54 @@ img {
 
 .instructor-image {
   vertical-align: top;
-  width: 100%;
-  opacity: 0; }
-
-.instructor_wrap {
-  /* layout rules */
-  position: absolute;
-  width: 40%;
-  min-width: 375px;
-  overflow: hidden;
-  border: 1px solid red;
-  /* layout settings */
-  padding-top: 15px;
-  top: 50%;
-  transform: translateY(-50%); }
+  width: 100%; }
 
 .instructor_meet {
   color: #FFFFFF;
-  font-size: 18px;
-  line-height: 53px;
   font-weight: 300;
   text-transform: uppercase;
   margin: 0; }
 
 .instructor_name {
   color: #FFFFFF;
-  font-size: 36px;
-  line-height: 38px;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0; }
 
 .instructor_title {
   color: #FFFFFF;
-  font-size: 22px;
-  line-height: 25px;
   font-weight: 400;
   margin: 0;
   padding-bottom: 21px; }
 
 .instructor_bio {
   color: #FFFFFF;
-  font-size: 20px;
-  line-height: 28px;
   font-weight: 300;
   margin: 0; }
 
-@media (max-width: 599px) {
+@media (min-width: 320px) {
   .quote {
     font-size: 28px;
-    line-height: 44px; } }
+    line-height: 44px;
+    padding: 50px 0px 74px 0px; } }
 
-@media (min-width: 600px) {
+@media (min-width: 480px) {
   .quote {
-    font-size: 38px;
-    line-height: 54px; } }
+    font-size: 34px;
+    line-height: 50px;
+    padding: 70px 0px 74px 0px; } }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
+  .quote {
+    font-size: 44px;
+    line-height: 60px;
+    padding: 120px 0px 74px 0px; } }
+
+@media (min-width: 1024px) {
   .quote {
     font-size: 48px;
-    line-height: 64px; } }
+    line-height: 64px;
+    padding: 170px 0px 74px 0px; } }
 
 .section-quote {
   height: 626px; }
@@ -334,7 +454,6 @@ img {
   font-style: italic;
   text-align: center;
   width: 75%;
-  padding: 170px 0px 74px 0px;
   margin: 0 auto; }
 
 .quote-author {
