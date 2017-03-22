@@ -1,6 +1,44 @@
+//
+// Mixins
+//
+
+/*-------------------------------------------
+	Vertical Centering
+-------------------------------------------*/
+
+@mixin vertical-align($val: 47%) {
+
+	// unset
+	@if $val == 'none' {
+	    top: auto;
+      -webkit-transform: none;
+         -moz-transform: none;
+          -ms-transform: none;
+              transform: none;
+
+   	} @else {
+        position: relative;
+        top: $val;
+        -webkit-transform: translateY(-50%);
+           -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+   	}
+}
+
+//
+// Variables
+//
+
 $red: #ff3300;
 $blue: #0000ff;
 $green: #009900;
+
+//
+// Partials
+//
+
+@import "partials/normalize";
 
 @import "partials/general";
 @import "partials/header";
