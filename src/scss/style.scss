@@ -3,6 +3,45 @@
 //
 
 /*-------------------------------------------
+	Clearfix
+-------------------------------------------*/
+
+@mixin clearfix() {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+/*-------------------------------------------
+	Media Queries
+-------------------------------------------*/
+
+@mixin min-up($min) {
+	@media only screen and (min-width: $min) { @content; }
+}
+
+@mixin max-down($max) {
+	@media only screen and (max-width: $max) { @content; }
+}
+
+@mixin min-max($min, $max) {
+	@media only screen and (min-width: $min) and (max-width: $max) { @content; }
+}
+
+/*-------------------------------------------
+	UL/OL reset
+-------------------------------------------*/
+
+@mixin list-reset {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+
+/*-------------------------------------------
 	Vertical Centering
 -------------------------------------------*/
 
@@ -26,13 +65,14 @@
    	}
 }
 
+
 //
 // Variables
 //
 
-$red: #ff3300;
-$blue: #0000ff;
-$green: #009900;
+$roboto: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$orange: #E66244;
+$nav-switch: 768px;
 
 //
 // Partials

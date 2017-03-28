@@ -1,7 +1,7 @@
 @media (max-width: 479px) {
   .instructor_wrap {
     width: 100%;
-    background-color: #E66244;
+    background-color: $orange;
     /* layout settings */
     margin-left: 0px;
     padding: 20px;
@@ -36,7 +36,7 @@
 @media (min-width: 480px) and (max-width: 767px) {
   .instructor_wrap {
     width: 100%;
-    background-color: #E66244;
+    background-color: $orange;
     /* layout settings */
     margin-left: 0px;
     padding: 20px;
