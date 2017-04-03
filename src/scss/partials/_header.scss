@@ -1,38 +1,94 @@
 .hero {
-  background-image: url(img/hero.jpg);
+  height: 600px;
+  background-color: $orange;
+  background-image: url('img/hero.jpg');
   background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
-  height: 100%;
-  min-height: 640px;
+  background-size: cover;
 }
 
 .header-logo {
-  margin: 18px 0px 0px 34px;
+  float: left;
+  margin: 15px 30px 0px 32px;
 }
 
 .main-nav {
-  margin: 35px 7px 0px 0px;
-  float: right;
+  @include clearfix;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  z-index: -1;
+
+  // JS button adds/removes this class
+  .nav-shown & {
+    opacity: 1;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.85);
+    transition: all 0.25s ease-out;
+  }
+
+  @include min-up($nav-switch) {
+    position: static;
+    opacity: 1;
+    padding: 2rem;
+    width: auto;
+    background-color: transparent !important; // make sure this overrides the .nav-shown class
+  }
 }
 
-.main-nav_link {
-  color: #FFFFFF;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
-  margin-right: 28px;
-  text-transform: uppercase;
+.nav-links {
+    @include clearfix;
+    @include list-reset;
+    @include vertical-align();
+    margin: 0 auto;
+
+    @include min-up($nav-switch) {
+        @include vertical-align('none');
+        float: right;
+    }
+
+    li {
+      display: block;
+      margin: 4rem;
+      text-align: center;
+
+      @include min-up($nav-switch) {
+        float: left;
+        margin: 0 1rem;
+      }
+    }
+
+    a {
+      display: inline-block;
+      font-family: $roboto;
+      font-size: 2rem;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #FFF;
+
+      @include min-up($nav-switch) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+.title-wrap {
+  @include vertical-align();
+  position: absolute;
+  width: 100%;
 }
 
 .hero-title {
-  margin: 0 auto;
+  margin: 0;
   color: #FFFFFF;
   font-size: 92px;
-  line-height: 107px;
+  line-height: 98px;
   font-weight: 100;
   text-align: center;
-  margin-top: 100px;
 }
 
 .hero-text {
